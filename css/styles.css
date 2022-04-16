@@ -9,3 +9,13 @@
   --accent1-color: #D4AFB9;
   --accent2-color: #50C9CE;
 }
+
+footer p {
+    display: block;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
