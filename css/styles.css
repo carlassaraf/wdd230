@@ -29,6 +29,12 @@ header h1 {
     margin: auto;
 }
 
+/* Main styles */
+main {
+    width: 40%;
+    margin: 0 auto;
+}
+
 /* Footer styles */
 footer p {
     display: block;
