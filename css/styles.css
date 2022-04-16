@@ -10,12 +10,32 @@
   --accent2-color: #50C9CE;
 }
 
+/* Header styles */
+header {
+    width: 40%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 2em;
+}
+
+header img {
+    width: 200px;
+    grid-column: 1;
+}
+
+header h1 {
+    grid-column: 2;
+    margin: auto;
+}
+
+/* Footer styles */
 footer p {
     display: block;
 }
 
 footer {
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
     text-align: center;
 }
