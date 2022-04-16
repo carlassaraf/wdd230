@@ -11,18 +11,21 @@
 
 /* Header styles */
 header {
-    width: 40%;
+    width: 30%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 100px 1fr;
     grid-gap: 2em;
 
     background-color: var(--primary-color);
+    border-radius: 1.5em;
 }
 
 header img {
-    width: 200px;
+    height: 100px;
     grid-column: 1;
+    padding: 1em;
+    border-radius: 25%;
 }
 
 header h1 {
@@ -34,27 +37,32 @@ header h1 {
 
 /* Main styles */
 main {
-    width: 40%;
+    width: 25%;
     margin: 0 auto;
 }
 
 /* Footer styles */
 footer {
-    width: 40%;
-    margin: 0 auto;
+    width: 30%;
+    margin: 2em auto;
     text-align: center;
 
     background-color: var(--primary-color);
+    border-radius: 1.5em;
 }
 
 footer p {
     display: block;
+    margin: 0;
 }
 
 #owner {
     color: white;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
 #last-modified {
     color: var(--last-modified-font);
+    padding-bottom: 0.5em;
 }
