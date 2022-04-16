@@ -1,0 +1,11 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #B75D69;
+  --secondary-color: #043565;
+  --accent1-color: #D4AFB9;
+  --accent2-color: #50C9CE;
+}
