@@ -4,14 +4,29 @@
   --last-modified-font: #ffe066;
 }
 
+@media (min-width: 100em) {
+    header {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 30%;
+        margin: 2em auto;
+    }
+}
+
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Header styles */
 header {
-    width: 30%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 100px 1fr;
     grid-gap: 2em;
@@ -34,16 +49,8 @@ header h1 {
     color: white;
 }
 
-/* Main styles */
-main {
-    width: 25%;
-    margin: 0 auto;
-}
-
 /* Footer styles */
 footer {
-    width: 30%;
-    margin: 2em auto;
     text-align: center;
 
     background-color: var(--primary-color);
