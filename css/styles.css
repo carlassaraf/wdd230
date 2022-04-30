@@ -25,30 +25,6 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Header styles */
-header {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-gap: 2em;
-
-    background-color: var(--primary-color);
-    border-radius: 1.5em;
-}
-
-header img {
-    height: 100px;
-    grid-column: 1;
-    padding: 1em;
-    border-radius: 25%;
-}
-
-header h1 {
-    grid-column: 2;
-    margin: auto;
-
-    color: white;
-}
-
 /* Footer styles */
 footer {
     text-align: center;
