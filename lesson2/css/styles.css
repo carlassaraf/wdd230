@@ -1,0 +1,49 @@
+:root {
+    /* Color pallete */
+    --primary-color: #043565;
+    --secondary-color: #e6dfdf;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    border-radius: 1.5em;
+    padding: 1em 0;
+}
+
+header h1, header h3 {
+    margin: auto;
+    text-align: center;
+
+    color: white;
+}
+
+.container {
+    padding: 0.5em;
+    background-color: var(--secondary-color);
+    border: 1px black solid;
+}
+
+div h3 {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.75em 0.75em 0 0;
+    padding: 0.5em;
+    margin-bottom: 0;
+}
+
+.container h4 {
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+img {
+    width: 100%;
+}
+
+.container p {
+    margin: 0 auto;
+    padding: 0.5em;
+    background-color: var(--secondary-color);
+    border-radius: 0 0 0.5em 0.5em;
+}
