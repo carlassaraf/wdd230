@@ -1,0 +1,16 @@
+@media (min-width: 100em) {
+    header {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 30%;
+        margin: 2em auto;
+    }
+}
