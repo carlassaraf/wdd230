@@ -1,0 +1,21 @@
+@media (min-width: 75em) and (max-width: 100em) {
+    
+    header, .navbar {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    main {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 70%;
+        margin: 2em auto;
+    }
+
+    .navbar {
+        flex-direction: row;
+    }
+}
