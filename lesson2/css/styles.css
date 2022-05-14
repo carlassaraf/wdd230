@@ -7,7 +7,7 @@
 /* Header styles */
 header {
     background-color: var(--primary-color);
-    border-radius: 1.5em;
+    border-radius: 1.5em 1.5em 0 0;
     padding: 1em 0;
 }
 
@@ -16,6 +16,10 @@ header h1, header h3 {
     text-align: center;
 
     color: white;
+}
+
+.navbar {
+    border-radius: 0 0 1.5em 1.5em;
 }
 
 .container {
@@ -46,4 +50,32 @@ img {
     padding: 0.5em;
     background-color: var(--secondary-color);
     border-radius: 0 0 0.5em 0.5em;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 0.5em 1em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding: auto;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: #303030;
 }

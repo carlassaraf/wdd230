@@ -1,6 +1,6 @@
 @media (min-width: 60em) and (max-width: 80em) {
     
-    header {
+    header, .navbar {
         width: 70%;
         margin: 0 auto;
     }
