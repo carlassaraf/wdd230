@@ -1,0 +1,76 @@
+:root {
+    /* Color pallete */
+    --primary-color: #043565;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    background-color: var(--primary-color);
+    padding: 1em;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+    width: 50%;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0 1em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 0.5em 1em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding: auto;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: #303030;
+}
+
+h1, label {
+    color: white;
+    font-weight: bold;
+}
+
+#input * {
+    display: block;
+    margin: 0.2em;
+    margin-left: 1em;
+}
+
+#input input, #input button {
+    display: inline;
+}
+
+#chapters {
+    border: 1px solid white;
+    margin: 1em;
+}
+
+.chapter {
+    padding: 1em;
+}
+
+.chapter p {
+    color: white;
+    display: inline;
+    margin-right: 1em;
+}
+
+.chapter button {
+    float: right;
+    margin-left: 1em;
+}
