@@ -131,7 +131,7 @@ footer div {
     padding-top: 2em;
 }
 
-footer div img{
+footer div img {
     display: block;
     margin: auto;
 }
@@ -150,10 +150,23 @@ footer p {
 
     main {
         width: 80%;
+        display: block;
+    }
+
+    #join {
+        display: none;
+    }
+
+    #spotlight-3 {
+        display: none;
     }
 
     footer {
         width: 80%;
         margin: 2em auto;
+    }
+
+    footer * {
+        display: block;
     }
 }

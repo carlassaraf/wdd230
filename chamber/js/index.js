@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setDate();
     setLastModified();
-
+    setYear();
 });
 
 function setDate() {
@@ -28,6 +28,16 @@ function setLastModified() {
     let date = new Date();
     let lastModified = document.getElementById("lastModified");
     lastModified.innerText += ` ${date.getMonth()}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+}
+
+function setYear() {
+
+    let date = new Date();
+    let p = document.querySelector("#footer-bottom p");
+    let txt = p.innerText.split("");
+    let index = txt.indexOf("©");
+    txt.splice(index + 1, 0, date.getFullYear());
+    p.innerText = txt.join("");
 }
 
 function toggleMenu() {
