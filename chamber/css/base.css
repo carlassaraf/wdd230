@@ -156,33 +156,3 @@ footer p {
     color: white;
     text-align: center;
 }
-
-@media (max-width: 75em) {
-    
-    header, .navbar {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    main {
-        width: 80%;
-        display: block;
-    }
-
-    #join {
-        display: none;
-    }
-
-    #spotlight-3 {
-        display: none;
-    }
-
-    footer {
-        width: 80%;
-        margin: 2em auto;
-    }
-
-    footer * {
-        display: block;
-    }
-}
