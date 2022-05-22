@@ -123,13 +123,13 @@ main {
     margin-top: 1em;
 }
 
-section {
+section, #join {
     background-color: var(--section-color);
     border: 1px solid #aaa;
     margin-top: 0.5em;
 }
 
-section h3 {
+section h3, div h3 {
     color: var(--primary-color);
     text-align: center;
     margin: auto;
@@ -150,7 +150,7 @@ section div {
     max-height: 100%;
 }
 
-#call-to-action h1 {
+#call-to-action h2 {
     position: absolute;
     left: 1em;
     background-color: var(--secondary-color);
