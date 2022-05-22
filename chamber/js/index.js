@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setDate();
     setLastModified();
     setYear();
+    checkJoinBanner();
 });
 
 function setDate() {
@@ -38,6 +39,16 @@ function setYear() {
     let index = txt.indexOf("©");
     txt.splice(index + 1, 0, date.getFullYear());
     p.innerText = txt.join("");
+}
+
+function checkJoinBanner() {
+
+    let date = new Date();
+    let banner = document.getElementById("join-banner");
+
+    if(date.getDay() == 1 || date.getDay() == 2) {
+        banner.style.display = "block";
+    }
 }
 
 function toggleMenu() {
