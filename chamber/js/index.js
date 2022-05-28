@@ -49,7 +49,7 @@ function checkJoinBanner() {
 
     let date = new Date();
 
-    if(date.getDay() == 6 || date.getDay() == 2) {
+    if(date.getDay() == 1 || date.getDay() == 2) {
 
         let header = document.querySelector("header");
         let banner = document.createElement("h3");
