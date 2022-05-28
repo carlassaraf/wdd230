@@ -29,4 +29,5 @@ function addChapter() {
 function removeChapter() {
 
     this.parentElement.remove();
+    document.querySelector("#input input").focus();
 }
