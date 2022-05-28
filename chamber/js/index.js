@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setLastModified();
     setYear();
     checkJoinBanner();
+    getWeatherData();
 });
 
 function setDate() {

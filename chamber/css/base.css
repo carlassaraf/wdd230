@@ -252,9 +252,9 @@ section div {
     margin-top: 0;
 }
 
-#weather p span {
-    float: right;
-    margin-right: 1em;
+#weather p {
+    text-align: center;
+    margin: 1em auto;
 }
 
 p {
