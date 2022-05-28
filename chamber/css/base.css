@@ -29,7 +29,8 @@ header {
     color: white;
     background-color: var(--secondary-color);
     border: 1.5px solid white;
-    display: none;
+    border-radius: 1.5em;
+    height: fit-content;
 }
 
 .header-container {

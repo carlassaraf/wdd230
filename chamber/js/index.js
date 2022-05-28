@@ -44,10 +44,17 @@ function setYear() {
 function checkJoinBanner() {
 
     let date = new Date();
-    let banner = document.getElementById("join-banner");
+    //document.getElementById("join-banner");
 
-    if(date.getDay() == 1 || date.getDay() == 2) {
-        banner.style.display = "block";
+    if(date.getDay() == 6 || date.getDay() == 2) {
+
+        let header = document.querySelector("header");
+        let banner = document.createElement("h3");
+        banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m";
+        banner.setAttribute("id", "join-banner");
+        header.prepend(banner);
+        // <h3 id="join-banner"></h3>
+        //banner.style.display = "block";
     }
 }
 
