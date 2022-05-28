@@ -1,0 +1,50 @@
+@media (max-width: 50em) {
+    
+    header, .navbar {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header-container {
+        display: block;
+    }
+
+    .header-container * {
+        display: block;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-container img {
+        margin: auto;
+    }
+
+    .header-container h1 {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    main {
+        width: 80%;
+        display: block;
+    }
+
+    #join {
+        display: none;
+    }
+
+    #spotlight-3 {
+        display: none;
+    }
+
+    footer {
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    footer * {
+        display: block;
+    }
+}

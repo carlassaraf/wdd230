@@ -1,4 +1,4 @@
-@media (max-width: 75em) {
+@media (min-width: 50em) and (max-width: 75em) {
     
     header, .navbar {
         width: 80%;
