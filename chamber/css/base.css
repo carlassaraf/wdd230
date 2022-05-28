@@ -164,8 +164,8 @@ section div {
     background-color: var(--secondary-color);
     color: white;
     font-weight: bolder;
-    padding: 0.25em;
-    border-radius: 0.75em;
+    padding: 0.5em;
+    border-radius: 1em;
     border: 2px solid black;
 }
 
@@ -190,7 +190,7 @@ section div {
 
 #join button {
     display: block;
-    padding: 1em 10em;
+    padding: 1em 5em;
     background-color: var(--secondary-color);
     color: white;
     font-weight: bold;
