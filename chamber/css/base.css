@@ -92,6 +92,8 @@ header {
     display: none;
     margin: 0;
     padding: 0;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .nav-links.open {
