@@ -21,7 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
 function setDate() {
 
     let date = new Date();
-    document.getElementById("date").innerText = `${days[date.getDay()]}, ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+    let h4 = document.createElement("h4");
+    h4.innerText = `${days[date.getDay()]}, ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+    h4.setAttribute("id", "date");
+
+    document.querySelector(".header-container").append(h4);
 }
 
 function setLastModified() {
@@ -44,7 +48,6 @@ function setYear() {
 function checkJoinBanner() {
 
     let date = new Date();
-    //document.getElementById("join-banner");
 
     if(date.getDay() == 6 || date.getDay() == 2) {
 
@@ -53,8 +56,6 @@ function checkJoinBanner() {
         banner.innerText = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m";
         banner.setAttribute("id", "join-banner");
         header.prepend(banner);
-        // <h3 id="join-banner"></h3>
-        //banner.style.display = "block";
     }
 }
 
