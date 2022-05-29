@@ -5,8 +5,14 @@
         margin: 0 auto;
     }
 
+    header {
+        min-height: 350px;
+    }
+
     .header-container {
         display: block;
+        height: fit-content;
+        margin-bottom: 0;
     }
 
     .header-container * {
@@ -24,6 +30,21 @@
     .header-container h1 {
         margin-top: 0.5em;
         margin-bottom: 0.5em;
+    }
+
+    .social {
+        margin: 1em 2em;
+        margin-bottom: 0;
+        display: flex;
+        direction: row;
+    }
+    
+    .social a {
+        margin: 0 1em;
+    }
+
+    .header-container #date {
+        margin: 1em;
     }
 
     main {
