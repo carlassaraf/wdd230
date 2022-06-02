@@ -1,0 +1,25 @@
+main {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+    filter: blur(0em);
+    transition: filter 1.5s;
+    display: block;
+    margin: auto;
+}
+
+[data-src] {
+    filter: blur(0.25em);
+}
+
+picture {
+    display: block;
+    margin-bottom: 1em;
+}
