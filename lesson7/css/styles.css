@@ -1,9 +1,55 @@
-main {
-    margin: auto;
+:root {
+    /* Color pallete */
+    --primary-color: #043565;
+    --secondary-color: #e6dfdf;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+    border-radius: 1.5em 1.5em 0 0;
+    background-color: black;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 0.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 0.5em 1em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding: auto;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: #303030;
+}
+
+.container {
+    padding: 0.5em;
+    background-color: var(--secondary-color);
+    border: 1px black solid;
+    width: 500px;
+    margin: 0 auto;
 }
 
 h1 {
     text-align: center;
+    background-color: var(--primary-color);
+    padding: 0.25em 0;
+    color: white;
+    border-radius: 1.5em;
 }
 
 img {
