@@ -130,9 +130,13 @@ header {
     padding: 0.5em;
 }
 
-main {
+.home-main {
     margin: auto;
     margin-top: 1em;
+}
+
+.discovery-main {
+    background-color: var(--section-color);
 }
 
 section, #join {
@@ -283,4 +287,47 @@ footer div img {
 footer p {
     color: white;
     text-align: center;
+}
+
+/* discovery */
+
+.container {
+    margin: 1em 0;
+}
+
+picture img {
+    width: 300px;
+    height: 400px;
+    filter: blur(0em);
+    transition: filter 1.5s;
+    display: block;
+    margin: auto;
+}
+
+[data-src] {
+    filter: blur(0.25em);
+}
+
+picture {
+    display: block;
+    margin-bottom: 1em;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.discovery-main h1 {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 0.25em 0;
+    color: white;
+    border-radius: 1.5em;
+    margin: 0 2em;
+    margin-bottom: 0;
+}
+
+.history-section p {
+    padding: 0;
+    margin: 1em 2em;
 }

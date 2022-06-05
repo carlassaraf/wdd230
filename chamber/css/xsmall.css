@@ -47,8 +47,18 @@
         margin: 1em;
     }
 
-    main {
+    .home-main {
         width: 80%;
+        display: block;
+    }
+
+    .discovery-main {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+
+    .container {
         display: block;
     }
 
