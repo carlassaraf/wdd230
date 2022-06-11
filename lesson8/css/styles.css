@@ -1,7 +1,8 @@
 :root {
-    --dark-row: #043565;
-    --light-row: #4d5191;
-    --light-light-row: #c5c7ee;
+    --primary-color: #043565;
+    --secondary-color: #e6dfdf;
+    --dark-row: #4d5191;
+    --light-row: #c5c7ee;
 }
 
 body {
@@ -17,19 +18,19 @@ table {
 }
 
 thead tr:first-child th {
-    background-color: var(--dark-row);
+    background-color: var(--primary-color);
     color: white;
     padding: 1em 0;
 }
 
 tfoot tr td {
-    background-color: var(--dark-row);
+    background-color: var(--primary-color);
     padding: 0.5em 1em; 
     color: white;
 }
 
 thead tr:nth-child(2) th {
-    background-color: var(--light-row);
+    background-color: var(--dark-row);
     padding: 0.75em 0;
 }
 
@@ -42,10 +43,49 @@ tr td {
 }
 
 tbody tr:nth-child(even) td {
-    background-color: var(--light-light-row);
+    background-color: var(--light-row);
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: white;
 }
 
 tbody tr:nth-child(4) td:nth-child(3) {
-    background-color: var(--light-row);
+    background-color: var(--dark-row);
     color: white;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 0.5px solid black;
+    background-color: var(--secondary-color);
+    border-radius: 0 0 1.5em 1.5em;
+}
+
+.navbar {
+    border-radius: 1.5em 1.5em 0 0;
+    background-color: black;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 0.5em 1em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding: auto;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: #303030;
 }
