@@ -4,57 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Join us!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/xsmall.css">
 </head>
 <body>
     
-    <main>
+    <header>
+        
+        <div class="header-container">
+            <img src="images/logo.jpg" alt="logo">
+            <h1>Quilmes</h1>
+            <h2>Chamber of Commerce</h2>
+            <div class="social">
+                <a href="#">
+                    <img src="images/facebook.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/linkedin.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button id="hamburgerBtn" onclick="toggleMenu()">
+            <span>&#9776;</span>
+            <span>X</span>
+        </button>
+        <ul class="nav-links" id="primaryNav">
+            <li class="nav-item"><a href="./">Home</a></li>
+            <li class="nav-item"><a href="./discovery.html">Discover</a></li>
+            <li class="nav-item"><a href="#">Directory</a></li>
+            <li class="nav-item"><a href="./join.html">Join</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+
+    <main class="join-main">
+
+        <h1>Join Us Now!</h1>
+
         <form method="GET" action="">
 
             <div id="first-name-input">
-                <label for="first-name">First name:</label>
-                <input type="text" name="first-name" id="first-name" required>    
+                <label for="first-name">
+                    <p class="prepend-label">First name</p>
+                    <input type="text" name="first-name" id="first-name" required>
+                </label> 
             </div> 
 
             <div id="last-name-input">
-                <label for="last-name">Last name:</label>
-                <input type="text" name="last-name" id="last-name" required>
+                <label for="last-name">
+                    <p class="prepend-label">Last name</p>
+                    <input type="text" name="last-name" id="last-name" required>
+                </label>
             </div>
 
             <div id="business-position-input">
-                <label for="business-position">Business position:</label>
-                <input type="text" name="business-position" pattern="a-z\-\ {7,}" id="business-position">    
+                <label for="business-position">
+                    <p class="prepend-label">Business position</p>
+                    <input type="text" name="business-position" pattern="a-z\-\ {7,}" id="business-position">
+                </label>  
             </div>
 
             <div id="email-input">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="some-email@domain.com" required>    
+                <label for="email">
+                    <p class="prepend-label">Email</p>
+                    <input type="email" name="email" id="email" placeholder="some-email@domain.com" required>
+                </label>
             </div>
 
             <div id="cell-phone-input">
-                <label for="cell-phone">Cell phone:</label>
-                <input type="tel" name="cell-phone" id="cell-phone" required>    
+                <label for="cell-phone">
+                    <p class="prepend-label">Cell phone</p>
+                    <input type="tel" name="cell-phone" id="cell-phone" required>
+                </label>
             </div>
 
             <div id="business-name-input">
-                <label for="business-name">Business name:</label>
-                <input type="text" name="business-name" id="business-name" required>    
+                <label for="business-name">
+                    <p class="prepend-label">Business name</p>
+                    <input type="text" name="business-name" id="business-name" required>  
+                </label>  
             </div>
 
             <div id="membership-input">
-                <p>Membership level:</p>
-                <input type="radio" name="membership" id="membership-np" value="np" required>
-                <label for="membership-np">NP Membership</label>
-                <input type="radio" name="membership" id="membership-bronze" value="bronze" required>
-                <label for="membership-bronze">Bronze Membership</label>
-                <input type="radio" name="membership" id="membership-silver" value="silver" required>
-                <label for="membership-silver">Silver Membership</label>
-                <input type="radio" name="membership" id="membership-gold" value="gold" required>
-                <label for="membership-gold">Gold Membership</label>
+                <p>Membership level</p>
+                <div class="membership-selector">
+                    <label for="membership-np">
+                        <input type="radio" name="membership" id="membership-np" value="np" required>
+                        NP Membership
+                    </label>
+                </div>
+                <div class="membership-selector">
+                    <label for="membership-bronze">
+                        <input type="radio" name="membership" id="membership-bronze" value="bronze" required>
+                        Bronze Membership
+                    </label>
+                </div>
+                <div class="membership-selector">
+                    <label for="membership-silver">
+                        <input type="radio" name="membership" id="membership-silver" value="silver" required>
+                        Silver Membership
+                    </label>
+                </div>
+                <div class="membership-selector">
+                    <label for="membership-gold">
+                        <input type="radio" name="membership" id="membership-gold" value="gold" required>
+                        Gold Membership
+                    </label>
+                </div>
             </div>
 
             <div id="business-description-input">
-                <textarea name="business-description" id="" cols="30" rows="10" placeholder="Describe your business..."></textarea>
+                <label for="business-description">
+                    <p class="prepend-label">Business description</p>
+                    <textarea name="business-description" id="business-description" cols="30" rows="10" placeholder="Describe your business..."></textarea>
+                </label>
             </div>
 
             <div id="timestamp-input">
@@ -67,6 +137,29 @@
 
         </form>
     </main>
+
+    <footer>
+        <div class="footer-container" id="footer-img">
+            <img src="images/footer-logo.png" alt="">
+        </div>
+
+        <div class="footer-container" id="footer-left">
+            <p id="footer-title">Quilmes Chamber of Commerce</p>
+            <p id="footer-address">Juan B Justo 1548</p>
+            <p id="footer-location">Quilmes, Buenos Aires</p>
+        </div>
+
+        <div class="footer-container" id="footer-right">
+            <p id="footer-email">info@quilmeschamberofcommerce.com</p>
+            <p id="footer-number">+54 9 11 43255642</p>
+            <p id="footer-map">📍 Location Map</p>
+        </div>
+
+        <div class="footer-container" id="footer-bottom">
+            <p>© - Quilmes Chamber | Fabrizio Carlassara | WDD 230 Project</p>
+            <p id="lastModified">Last Modification: </p>
+        </div>
+    </footer>
 
 </body>
 </html>

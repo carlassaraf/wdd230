@@ -2,8 +2,9 @@
     /* Color pallete */
     --primary-color: #043565;
     --secondary-color: #38638c;
-    --section-color: #aaaaaa;
+    --section-color: #eeeeee;
     --section-title: #dddddd;
+    --prepend-label-color: #cccccc;
 }
 
 body {
@@ -271,8 +272,10 @@ p {
 }
 
 footer {
+    margin: 0 auto;
     background-color: var(--primary-color);
     padding-bottom: 1em;
+    border-radius: 0 0 1.5em 1.5em;
 }
 
 footer div {
@@ -330,4 +333,98 @@ figcaption {
 .history-section p {
     padding: 0;
     margin: 1em 2em;
+}
+
+/* join us main */
+
+.join-main {
+    margin: 0 auto;
+    background-color: var(--section-color);
+    padding: 1em 0;
+}
+
+.join-main h1 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    width: fit-content;
+    margin: 1em auto;
+    padding: 0.25em 3em;
+    border-radius: 1em;
+}
+
+.join-main form {
+    margin: 1em auto;
+}
+
+form {
+    width: fit-content;
+    padding: 0 2em;
+}
+
+form div {
+    margin: 0.5em auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+#membership-input p {
+    padding: 0.25em 0;
+    padding-left: 1em;
+    border-radius: 1em;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.membership-selector {
+    width: fit-content;
+    margin-left: 1em;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 0 0 1em 1em;
+    width: 100%;
+    padding: 0.5em 0;
+    padding-left: 1em;
+}
+
+.prepend-label {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1em 1em 0 0;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.5em 0;
+    padding-left: 1em;
+    border: 1px black solid;
+}
+
+#business-description-input label p {
+    padding-right: 1em;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 0 0 1em 1em;
+    padding: 1em;
+    margin-top: 0;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    margin: 0.5em auto;
+    display: block;
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 2em;
+    font-weight: bold;
+}
+
+label {
+    width: fit-content;
+    height: fit-content;
 }

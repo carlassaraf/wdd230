@@ -31,6 +31,10 @@
     .discovery-main {
         padding-top: 1em;
     }
+
+    .join-main {
+        width: 100%;
+    }
     
     .container {
         display: grid;
@@ -107,7 +111,6 @@
     /* Footer styles */
     footer {
         width: 100%;
-        margin: 2em auto;
         display: grid;
         grid-template-columns: 150px 1fr 1fr;
         grid-template-rows: 1fr 4em;
