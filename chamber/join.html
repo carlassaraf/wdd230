@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        <form method="GET" action="">
+
+            <div id="first-name-input">
+                <label for="first-name">First name:</label>
+                <input type="text" name="first-name" id="first-name" required>    
+            </div> 
+
+            <div id="last-name-input">
+                <label for="last-name">Last name:</label>
+                <input type="text" name="last-name" id="last-name" required>
+            </div>
+
+            <div id="business-position-input">
+                <label for="business-position">Business position:</label>
+                <input type="text" name="business-position" pattern="a-z\-\ {7,}" id="business-position">    
+            </div>
+
+            <div id="email-input">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="some-email@domain.com" required>    
+            </div>
+
+            <div id="cell-phone-input">
+                <label for="cell-phone">Cell phone:</label>
+                <input type="tel" name="cell-phone" id="cell-phone" required>    
+            </div>
+
+            <div id="business-name-input">
+                <label for="business-name">Business name:</label>
+                <input type="text" name="business-name" id="business-name" required>    
+            </div>
+
+            <div id="membership-input">
+                <p>Membership level:</p>
+                <input type="radio" name="membership" id="membership-np" value="np" required>
+                <label for="membership-np">NP Membership</label>
+                <input type="radio" name="membership" id="membership-bronze" value="bronze" required>
+                <label for="membership-bronze">Bronze Membership</label>
+                <input type="radio" name="membership" id="membership-silver" value="silver" required>
+                <label for="membership-silver">Silver Membership</label>
+                <input type="radio" name="membership" id="membership-gold" value="gold" required>
+                <label for="membership-gold">Gold Membership</label>
+            </div>
+
+            <div id="business-description-input">
+                <textarea name="business-description" id="" cols="30" rows="10" placeholder="Describe your business..."></textarea>
+            </div>
+
+            <div id="timestamp-input">
+                <input type="hidden" name="timestamp">
+            </div>
+
+            <div id="submit-imput">
+                <input type="submit" value="Join">
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>
