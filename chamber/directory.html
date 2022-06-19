@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+    <script src="js/discovery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/discovery.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/xsmall.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/lazyload.css">
+</head>
+<body>
+
+    <header>
+        
+        <div class="header-container">
+            <img src="images/logo.jpg" alt="logo">
+            <h1>Quilmes</h1>
+            <h2>Chamber of Commerce</h2>
+            <div class="social">
+                <a href="#">
+                    <img src="images/facebook.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/linkedin.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <button id="hamburgerBtn" onclick="toggleMenu()">
+            <span>&#9776;</span>
+            <span>X</span>
+        </button>
+        <ul class="nav-links" id="primaryNav">
+            <li class="nav-item"><a href="./">Home</a></li>
+            <li class="nav-item"><a href="./discovery.html">Discover</a></li>
+            <li class="nav-item"><a href="./directory.html">Directory</a></li>
+            <li class="nav-item"><a href="#">Join</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>    
+        </ul>
+    </nav>
+
+    <main class="directory-main">
+
+        <h1>Directory</h1>
+
+        <ul id="directory-list">
+
+        </ul>
+
+    </main>
+
+    <footer>
+        <div class="footer-container" id="footer-img">
+            <img src="images/footer-logo.png" alt="">
+        </div>
+
+        <div class="footer-container" id="footer-left">
+            <p id="footer-title">Quilmes Chamber of Commerce</p>
+            <p id="footer-address">Juan B Justo 1548</p>
+            <p id="footer-location">Quilmes, Buenos Aires</p>
+        </div>
+
+        <div class="footer-container" id="footer-right">
+            <p id="footer-email">info@quilmeschamberofcommerce.com</p>
+            <p id="footer-number">+54 9 11 43255642</p>
+            <p id="footer-map">📍 Location Map</p>
+        </div>
+
+        <div class="footer-container" id="footer-bottom">
+            <p>© - Quilmes Chamber | Fabrizio Carlassara | WDD 230 Project</p>
+            <p id="lastModified">Last Modification: </p>
+        </div>
+    </footer>
+
+</body>
+</html>

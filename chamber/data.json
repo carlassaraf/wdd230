@@ -1,0 +1,88 @@
+{
+    "companies": [
+      {
+        "name": "Estudio Jurídico Integral",
+        "address": "Venezuela 1287 Bis",
+        "phone": "+54 341 338 7893",
+        "site": "estudio@roschamber.com",
+        "level": "Gold"
+      },
+      {
+        "name": "Alimentos Balanceados SRL",
+        "address": "Zeballos 4026",
+        "phone": "+54 341 436 1128",
+        "site": "mascotas@roschamber.com",
+        "level": "Gold"
+      },
+      {
+        "name": "Metalúrgica Martini",
+        "address": "Camilo Aldao 644",
+        "phone": "+54 341 525 3792",
+        "site": "martini@roschamber.com",
+        "level": "Gold"
+      },
+      {
+        "name": "S.O.S Clean",
+        "address": "Iriarte 4143",
+        "phone": "+54 341 587 5495",
+        "site": "sosclean@roschamber.com",
+        "level": "Silver"
+      },
+      {
+        "name": "Mascarella Alfombras",
+        "address": "Dorrego 5958",
+        "phone": "+54 341 463 1097",
+        "site": "mascarella@roschamber.com",
+        "level": "Silver"
+      },
+      {
+        "name": "Escuela N°1382 Trascender",
+        "address": "Av. Arijón 651",
+        "phone": "+54 341 521 5974",
+        "site": "trascender@roschamber.com",
+        "level": "Silver"
+      },
+      {
+        "name": "EficientLimp",
+        "address": "Pasaje Gral. Savio 2628",
+        "phone": "+54 341 461 2113",
+        "site": "efficient@roschamber.com",
+        "level": "Silver"
+      },
+      {
+        "name": "Abogado Penalista",
+        "address": "Mariano Moreno 1577",
+        "phone": "+54 341 449 1478",
+        "site": "penalista@roschamber.com",
+        "level": "Bronze"
+      },
+      {
+        "name": "Álvarez Pisos de Madera",
+        "address": "San Martín 2383",
+        "phone": "+54 341 550 0913",
+        "site": "alvarez@roschamber.com",
+        "level": "Bronze"
+      },
+      {
+        "name": "Tecnología Eléctrica",
+        "address": "Grondona 704",
+        "phone": "+54 341 740 0004",
+        "site": "tecelec@roschamber.com",
+        "level": "Bronze"
+      },
+      {
+        "name": "MagicLimpRosario",
+        "address": "3 de febrero 542",
+        "phone": "+54 341 390 8882",
+        "site": "magic@roschamber.com",
+        "level": "NP"
+      },
+      {
+        "name": "Naquet - Alimentos Sin Tacc",
+        "address": "Rioja 3243",
+        "phone": "+54 341 550 1963",
+        "site": "naquet@roschamber.com",
+        "level": "NP"
+      }
+    ]
+  }
