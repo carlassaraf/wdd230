@@ -1,20 +1,19 @@
 const requestURL='https://carlassaraf.github.io/wdd230/chamber/data.json';
 
-const shops = document.querySelector('#directory-list');
-
 document.addEventListener("DOMContentLoaded", () => {
     fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject);
         companies= jsonObject['companies'];
         companies.forEach(displayCompanies);
     });
 });
 
 function displayCompanies(company) {
+
+    const shops = document.querySelector('#directory-list');
 
     let li = document.createElement("li");
     let h4 = document.createElement("h4");

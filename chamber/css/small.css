@@ -50,6 +50,10 @@
         width: 80%;
     }
 
+    .directory-main {
+        width: 80%;
+    }
+
     .container {
         display: grid;
         grid-template-columns: repeat(2, fit-content(1fr));

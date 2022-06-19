@@ -35,6 +35,10 @@
     .join-main {
         width: 100%;
     }
+
+    .directory-main {
+        width: 100%;
+    }
     
     .container {
         display: grid;
