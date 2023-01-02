@@ -65,3 +65,7 @@ footer h4 {
     color: var(--secondary-font-color);
     margin-bottom: 0.5em;
 }
+
+.assignment-list li {
+    margin-left: 2em;
+}
