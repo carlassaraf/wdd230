@@ -1,0 +1,10 @@
+body {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+body * {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
