@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let h4 = document.querySelector("footer h4");
 
     // Set h4 inner text with date
-    h4.innerText = `Last modified: ${lastModified}`;
+    h4.innerText = h4.innerText.concat(` ${lastModified}`);
 
     // Get current date
     let date = new Date();
