@@ -28,6 +28,7 @@ header, footer {
 h2 {
     font-family: var(--title-font-family), sans-serif;
     text-align: center;
+    margin: 0;
 }
 
 header {
