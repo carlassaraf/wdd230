@@ -29,3 +29,17 @@ h2 {
     font-family: var(--title-font-family), sans-serif;
     text-align: center;
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+}
+
+header img {
+    margin: 1.25em 2em;
+    margin-right: 0;
+    width: 125px;
+    border-radius: 1em;
+}
