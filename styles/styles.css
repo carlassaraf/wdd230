@@ -5,6 +5,7 @@
 :root {
     --main-bk-color: #003459;
     --main-font-color: white;
+    --secondary-font-color: rgba(255, 255, 0, 0.734);
     --title-font-family: 'Ubuntu';
     --main-font-family: 'Roboto Mono';
 }
@@ -25,7 +26,7 @@ header, footer {
     border-radius: 1em;
 }
 
-h2 {
+h2, h3 {
     font-family: var(--title-font-family), sans-serif;
     text-align: center;
     margin: 0;
@@ -43,4 +44,13 @@ header img {
     margin-right: 0;
     width: 125px;
     border-radius: 1em;
+}
+
+footer h3 {
+    margin-top: 1em; 
+}
+
+footer h4 {
+    color: var(--secondary-font-color);
+    margin-bottom: 1em;
 }
