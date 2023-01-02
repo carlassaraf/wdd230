@@ -15,7 +15,7 @@ body {
     font-family: var(--main-font-family), monospace, sans-serif;
 }
 
-body * {
+header, main, footer {
     width: 50%;
     margin: 0 auto;
     margin-top: 1em;
@@ -24,7 +24,10 @@ body * {
 header, footer {
     background-color: var(--main-bk-color);
     color: var(--main-font-color);
-    font-family: var(--title-font-family), sans-serif;
     border-radius: 1em;
 }
 
+h2 {
+    font-family: var(--title-font-family), sans-serif;
+    text-align: center;
+}
