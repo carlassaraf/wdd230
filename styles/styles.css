@@ -10,8 +10,6 @@
 }
 
 body {
-    flex-wrap: wrap;
-    flex-direction: column;
     font-family: var(--main-font-family), monospace, sans-serif;
 }
 
