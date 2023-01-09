@@ -1,0 +1,14 @@
+@media (min-width: 32.5em) and (max-width: 50em) {
+
+    header, main, footer {
+        width: 75%
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    header h1 {
+        margin-right: 0.5em;
+    }
+}
