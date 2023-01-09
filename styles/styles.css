@@ -4,9 +4,11 @@
 /* Custom properties */
 :root {
     --main-bk-color: #003459;
+    --secondary-bk-color: #fff4f4;
     --main-font-color: white;
     --navbar-nk-color: black;
     --navlink-hover-color: #555555;
+    --link-alter-active-color: #cccccc;
     --secondary-font-color: rgba(255, 255, 0, 0.734);
     --title-font-family: 'Ubuntu';
     --main-font-family: 'Roboto Mono';
@@ -34,7 +36,7 @@ header, footer {
 
 .nav-links {
     display: flex;
-    direction: row;
+    flex-direction: row;
     margin: 0;
 }
 
@@ -111,4 +113,37 @@ footer h4 {
 #design-principles-header h1 {
     margin: 0;
     margin-top: 1em;
+}
+
+#design-principles-main {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.design-principle {
+    border-radius: 2em 2em 0 0;
+    height: fit-content;
+    background-color: var(--secondary-bk-color);
+}
+
+.design-principle h2 {
+    background-color: var(--main-bk-color);
+    color: var(--main-font-color);
+    border-radius: 1em 1em 0 0;
+    padding: 0.5em;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.design-principle h2 a:visited {
+    color: var(--link-alter-active-color);
+}
+
+.design-principle p {
+    padding: 1em;
+}
+
+.design-principle img {
+    width: 100%;
 }
