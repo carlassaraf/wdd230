@@ -5,6 +5,8 @@
 :root {
     --main-bk-color: #003459;
     --main-font-color: white;
+    --navbar-nk-color: black;
+    --navlink-hover-color: #555555;
     --secondary-font-color: rgba(255, 255, 0, 0.734);
     --title-font-family: 'Ubuntu';
     --main-font-family: 'Roboto Mono';
@@ -23,6 +25,32 @@ header, footer {
     background-color: var(--main-bk-color);
     color: var(--main-font-color);
     border-radius: 1.75em;
+}
+
+.navbar {
+    background-color: var(--navbar-nk-color);
+    border-radius: 0 0 1.75em 1.75em;
+}
+
+.nav-links {
+    display: flex;
+    direction: row;
+}
+
+.nav-item {
+    list-style: none;
+    padding: 0.5em 1em;
+}
+
+.nav-item a {
+    color: var(--main-font-color);
+    font-family: var(--title-font-family), sans-serif;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+.nav-item a:hover {
+    background-color: var(--navlink-hover-color);
 }
 
 h1, h2, h3, h4 {
@@ -67,3 +95,5 @@ footer h4 {
 .assignment-list li {
     margin-left: 2em;
 }
+
+/* Design Principles styles */
