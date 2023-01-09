@@ -15,7 +15,6 @@ body {
 }
 
 header, main, footer {
-    width: 50%;
     margin: 0 auto;
     margin-top: 1em;
 }
@@ -35,7 +34,6 @@ h1, h2, h3, h4 {
 header {
     display: flex;
     flex: 2 1;
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     gap: 1em;
