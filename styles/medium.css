@@ -4,11 +4,11 @@
         width: 75%
     }
 
-    header {
+    #index-header {
         flex-direction: row;
     }
 
-    header h1 {
+    #index-header h1 {
         margin-right: 0.5em;
     }
 }
