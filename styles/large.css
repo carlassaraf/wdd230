@@ -11,4 +11,10 @@
     #index-header h1 {
         margin-right: 0.5em;
     }
+
+    #design-principles-main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 1em;
+    }
 }
