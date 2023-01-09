@@ -116,15 +116,15 @@ footer h4 {
 }
 
 #design-principles-main {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+    display: grid;
 }
 
 .design-principle {
     border-radius: 2em 2em 0 0;
-    height: fit-content;
     background-color: var(--secondary-bk-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .design-principle h2 {
