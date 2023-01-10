@@ -23,4 +23,9 @@
         margin: 0.5em;
         margin-bottom: 0;
     }
+
+    #design-principles-main {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr;
+    }
 }
