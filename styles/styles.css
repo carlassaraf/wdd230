@@ -154,3 +154,31 @@ footer h4 {
 .design-principle img {
     width: 100%;
 }
+
+/* Planning document */
+
+#planning-document-header {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 1em;
+}
+
+#planning-document-header img {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 1em 0 0 1em;
+    border-radius: 1em;
+}
+
+#planning-document-header h1 {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#planning-document-header .navbar {
+    grid-row: 2;
+    grid-column: 1 / 3;
+}
