@@ -10,6 +10,7 @@
     --navlink-hover-color: #555555;
     --link-alter-active-color: #cccccc;
     --secondary-font-color: rgba(255, 255, 0, 0.734);
+    --active-link-font-color: rgb(255, 255, 163);
     --title-font-family: 'Ubuntu';
     --main-font-family: 'Roboto Mono';
 }
@@ -61,6 +62,11 @@ h1, h2, h3, h4 {
     font-family: var(--title-font-family), sans-serif;
     text-align: center;
     margin: 0;
+}
+
+.nav-item-active {
+    color: var(--active-link-font-color) !important;
+    font-weight: bolder;
 }
 
 /* Index styles */
