@@ -26,4 +26,8 @@
         grid-column: 1 / 3;
         grid-row: 2;
     }
+
+    #planning-document-header .navbar .nav-links {
+        flex-direction: column;
+    }
 }

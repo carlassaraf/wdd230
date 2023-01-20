@@ -37,21 +37,24 @@ header, footer {
 
 .nav-links {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     margin: 0;
+    padding: 0;
 }
 
 .nav-item {
     list-style: none;
-    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-item a {
     color: var(--main-font-color);
     font-family: var(--title-font-family), sans-serif;
     text-decoration: none;
-    padding: 0.5em 1em;
-    margin: 0;
+    padding: 0.4em 1em;
 }
 
 .nav-item a:hover {
@@ -158,17 +161,26 @@ footer h4 {
 /* Planning document */
 
 #planning-document-header {
-    display: grid;
-    grid-template-columns: 350px 1fr;
-    grid-template-rows: 1fr auto;
-    grid-gap: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-evenly;
+    gap: 1em;
+}
+
+#planning-document-header-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    gap: 1em;
 }
 
 #planning-document-header img {
     grid-row: 1;
     grid-column: 1;
-    margin: 1em 0 0 1em;
-    border-radius: 1em;
+    max-width: 128px;
+    width: 100%;
+    height: auto;
 }
 
 #planning-document-header h1 {

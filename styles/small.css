@@ -28,4 +28,8 @@
         grid-template-rows: repeat(3, auto);
         grid-template-columns: 1fr;
     }
+
+    #planning-document-header .navbar .nav-links {
+        flex-direction: column;
+    }
 }
