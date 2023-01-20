@@ -195,6 +195,30 @@ footer h4 {
     grid-column: 1 / 3;
 }
 
-#planning-document-main * {
-    margin: 1em 4em;
+#planning-document-main {
+    margin: 1em auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
+.planning-document-main-section {
+    background-color: var(--secondary-bk-color);
+    border-radius: 1em;
+}
+
+.planning-document-main-section h2 {
+    background-color: var(--main-bk-color);
+    border-radius: 1em 1em 0 0;
+    color: white;
+    padding: 0.25em 0;
+}
+
+.planning-document-main-section h3 {
+    text-align: left;
+    margin: 1em;
+}
+
+.planning-document-main-section p {
+    margin: 1em;
 }
