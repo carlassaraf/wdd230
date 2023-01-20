@@ -6,13 +6,15 @@
     --main-bk-color: #003459;
     --secondary-bk-color: #fff4f4;
     --main-font-color: white;
-    --navbar-nk-color: black;
+    --navbar-bk-color: black;
     --navlink-hover-color: #555555;
     --link-alter-active-color: #cccccc;
     --secondary-font-color: rgba(255, 255, 0, 0.734);
     --active-link-font-color: rgb(255, 255, 163);
     --title-font-family: 'Ubuntu';
     --main-font-family: 'Roboto Mono';
+    --table-row-odd-bk-color: white;
+    --table-row-even-bk-color: rgb(239, 232, 232);
 }
 
 body {
@@ -31,7 +33,7 @@ header, footer {
 }
 
 .navbar {
-    background-color: var(--navbar-nk-color);
+    background-color: var(--navbar-bk-color);
     border-radius: 0 0 1.75em 1.75em;
 }
 
@@ -221,4 +223,97 @@ footer h4 {
 
 .planning-document-main-section p {
     margin: 1em;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 1em;
+}
+
+thead {
+    background-color: var(--main-bk-color);
+    color: white;
+}
+
+th {
+    padding: 0.5em 0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--table-row-odd-bk-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-row-even-bk-color);
+}
+
+tr {
+    text-align: center;
+    border: white 2px solid;
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2) {
+    width: 15%;
+}
+
+thead th:nth-child(3) {
+    width: 10%;
+}
+
+thead th:nth-child(4) {
+    width: 15%;
+}
+
+#h1-row td:nth-child(5) {
+    background-color: var(--main-bk-color);
+    color: white;
+    font-family: var(--title-font-family);
+    font-size: 36px;
+}
+
+#h2-row td:nth-child(5) {
+    background-color: var(--main-bk-color);
+    color: white;
+    font-family: var(--title-font-family);
+    font-size: 27px;
+}
+
+#h3-row td:nth-child(5) {
+    background-color: var(--secondary-bk-color);
+    font-family: var(--title-font-family);
+    font-size: 21px;
+}
+
+#h4-row td:nth-child(5) {
+    background-color: var(--secondary-bk-color);
+    font-family: var(--title-font-family);
+    font-size: 18px;
+}
+
+#p-row td:nth-child(5) {
+    background-color: var(--secondary-bk-color);
+    font-size: 16px;
+}
+
+#a-row td:nth-child(5) {
+    background-color: var(--navbar-bk-color);
+    color: white;
+    font-size: 16px;
+}
+
+#a-active-row td:nth-child(5) {
+    background-color: var(--navbar-bk-color);
+    color: var(--active-link-font-color);
+    font-size: 16px;
+}
+
+#a-hover-row td:nth-child(5) {
+    background-color: var(--navlink-hover-color);
+    color: white;
+    font-size: 16px;
 }
