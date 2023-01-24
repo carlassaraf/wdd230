@@ -46,7 +46,7 @@ h1, h2, h3, h4 {
 
 .navbar {
     background-color: var(--navbar-bk-color);
-    border-radius: 0 0 1.75em 1.75em;
+    padding: 0.5em;
 }
 
 .nav-links {
