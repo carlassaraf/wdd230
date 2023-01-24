@@ -1,4 +1,4 @@
-@media (min-width: 30em) and (max-width: 50em) {
+@media (min-width: 35em) and (max-width: 50em) {
 
     #home-main {
         display: grid;
@@ -40,5 +40,50 @@
 
     #spotlight-section .spotlight:nth-child(3) {
         display: none;
+    }
+
+    #header-content {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 1em;
+        place-items: center;
+    }
+
+    #logo-section {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    #social-div {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .navbar {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #date-section {
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-links .nav-item:first-child {
+        display: block;
+    }
+
+    #menu::before {
+        content: "≣";
     }
 }

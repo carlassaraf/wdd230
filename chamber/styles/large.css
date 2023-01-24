@@ -42,10 +42,6 @@
         display: block;
     }
 
-    header {
-        padding: 1em;
-    }
-
     #header-content {
         display: grid;
         grid-template-columns: auto 1fr auto;

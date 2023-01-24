@@ -44,6 +44,14 @@ h1, h2, h3, h4 {
 
 /* Header elements */
 
+header {
+    padding: 1em;
+}
+
+#name-section h2 {
+    overflow-wrap: break-word;
+}
+
 .navbar {
     background-color: var(--navbar-bk-color);
     padding: 0.5em;
@@ -80,6 +88,14 @@ h1, h2, h3, h4 {
     font-weight: bolder;
 }
 
+.show {
+    display: block;
+}
+
+.responsive #menu::before {
+    content: "X";
+}
+
 #header-logo {
     max-width: 128px;
     width: 100%;
@@ -107,7 +123,7 @@ h1, h2, h3, h4 {
     gap: 1em;
 }
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 35em) {
 
     #home-main {
         display: flex;
