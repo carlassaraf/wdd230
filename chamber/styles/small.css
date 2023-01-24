@@ -154,16 +154,36 @@ header {
         grid-template-rows: repeat(2, auto);
         grid-template-columns: auto 1fr auto;
         grid-gap: 1em;
+        place-items: center;
     }
 
     #logo-section {
         grid-column: 1;
         grid-row: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-section h1 {
+        text-align: left;
+        font-size: 1.5em;
+    }
+
+    #logo-section h2 {
+        text-align: left;
+        font-size: 1.25em;
     }
 
     #social-div {
         grid-column: 2;
         grid-row: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0.25em;
+        align-items: center;
     }
 
     .navbar {
@@ -192,5 +212,16 @@ header {
 
     #menu::before {
         content: "≣";
+    }
+
+    #header-logo {
+        max-width: 60px;
+        height: auto;
+    }
+
+    .social {
+        max-width: 24px;
+        max-height: 24px;
+        height: auto;
     }
 }
