@@ -92,7 +92,7 @@ h1, h2, h3, h4 {
         display: none;
     }
 
-    #spotlilght-section .spotlight:nth-child(3) {
+    #spotlight-section .spotlight:nth-child(3) {
         display: none;
     }
 }

@@ -1,4 +1,4 @@
-@media (min-width: 32.5em) and (max-width: 50em) {
+@media (min-width: 30em) and (max-width: 50em) {
 
     #home-main {
         display: grid;
@@ -38,7 +38,7 @@
         grid-row: 5;
     }
 
-    #spotlilght-section .spotlight:nth-child(3) {
+    #spotlight-section .spotlight:nth-child(3) {
         display: none;
     }
 }
