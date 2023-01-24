@@ -36,6 +36,14 @@ header, footer {
     border-radius: 1.75em;
 }
 
+h1, h2, h3, h4 {
+    font-family: var(--title-font-family), sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Header elements */
+
 .navbar {
     background-color: var(--navbar-bk-color);
     border-radius: 0 0 1.75em 1.75em;
@@ -67,16 +75,25 @@ header, footer {
     background-color: var(--navlink-hover-color);
 }
 
-h1, h2, h3, h4 {
-    font-family: var(--title-font-family), sans-serif;
-    text-align: center;
-    margin: 0;
-}
-
 .nav-item-active {
     color: var(--active-link-font-color) !important;
     font-weight: bolder;
 }
+
+#header-logo {
+    max-width: 128px;
+    width: 100%;
+    height: auto;
+}
+
+.social {
+    max-width: 32px;
+    width: 100%;
+    height: auto;
+    margin: 0.5em;
+}
+
+/* Main elements */
 
 .home-section, .spotlight {
     background-color: var(--secondary-bk-color);

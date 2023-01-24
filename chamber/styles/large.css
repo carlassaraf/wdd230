@@ -41,4 +41,28 @@
     #spotlilght-section .spotlight:nth-child(3) {
         display: block;
     }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1em;
+    }
+
+    #logo-section {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .navbar {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #social-div {
+        grid-row: 1;
+        grid-column: 3;
+    }
 }
