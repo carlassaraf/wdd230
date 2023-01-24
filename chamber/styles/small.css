@@ -34,6 +34,7 @@ header, footer {
     background-color: var(--main-bk-color);
     color: var(--main-font-color);
     border-radius: 1.75em;
+    padding: 1em;
 }
 
 h1, h2, h3, h4 {
@@ -42,11 +43,11 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
-/* Header elements */
-
-header {
-    padding: 1em;
+hr {
+    width: 100%;
 }
+
+/* Header elements */
 
 #name-section h2 {
     overflow-wrap: break-word;
@@ -222,6 +223,23 @@ header {
     .social {
         max-width: 24px;
         max-height: 24px;
+        height: auto;
+    }
+
+    #footer-content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    #footer-content p {
+        text-align: center;
+        margin: 0;
+    }
+
+    #footer-logo {
+        max-width: 80px;
         height: auto;
     }
 }
