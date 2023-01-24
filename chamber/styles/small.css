@@ -16,3 +16,79 @@
     --table-row-odd-bk-color: white;
     --table-row-even-bk-color: rgb(239, 232, 232);
 }
+
+body {
+    font-family: var(--main-font-family), monospace, sans-serif;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+header, footer {
+    background-color: var(--main-bk-color);
+    color: var(--main-font-color);
+    border-radius: 1.75em;
+}
+
+.navbar {
+    background-color: var(--navbar-bk-color);
+    border-radius: 0 0 1.75em 1.75em;
+}
+
+.nav-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item a {
+    color: var(--main-font-color);
+    font-family: var(--title-font-family), sans-serif;
+    text-decoration: none;
+    padding: 0.4em 1em;
+}
+
+.nav-item a:hover {
+    background-color: var(--navlink-hover-color);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--title-font-family), sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-item-active {
+    color: var(--active-link-font-color) !important;
+    font-weight: bolder;
+}
+
+.home-section, .spotlight {
+    background-color: var(--secondary-bk-color);
+    margin: 1em;
+    padding: 1em;
+    border: 1px black solid;
+}
+
+@media screen and (max-width: 30em) {
+    
+    header, main, footer {
+        width: 80%;
+    }
+
+    #home-main {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
