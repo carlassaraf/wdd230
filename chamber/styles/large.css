@@ -84,12 +84,5 @@
     #date-section {
         grid-column: 1/4;
         grid-row: 2;
-        background-color: var(--navbar-bk-color);
-        width: 100%;
-    }
-
-    #date-section p {
-        text-align: center;
-        margin: 0.5em 0;
     }
 }

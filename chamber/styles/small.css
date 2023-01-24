@@ -109,6 +109,16 @@ header {
     margin: 0.5em;
 }
 
+#date-section {
+    background-color: var(--navbar-bk-color);
+    width: 100%;
+}
+
+#date-section p {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
 /* Main elements */
 
 .home-section, .spotlight {
