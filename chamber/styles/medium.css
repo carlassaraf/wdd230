@@ -60,9 +60,24 @@
         gap: 1em;
     }
 
+    #header-logo {
+        max-width: 80px;
+    }
+
     #social-div {
         grid-column: 2;
         grid-row: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-content: center;
+        gap: 0.5em;
+        width: 100%;
+    }
+
+    .social {
+        max-width: 24px;
+        height: auto;
     }
 
     .navbar {
@@ -81,7 +96,7 @@
 
     .nav-links {
         flex-direction: column;
-        gap: 1em;
+        gap: 0.5em;
         align-items: flex-end;
     }
 
