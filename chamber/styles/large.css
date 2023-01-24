@@ -47,7 +47,7 @@
         grid-template-columns: auto 1fr auto;
         grid-template-rows: repeat(2, auto);
         grid-row-gap: 1em;
-        grid-column-gap: 3em;
+        grid-column-gap: 2em;
         place-items: center;
     }
 
@@ -55,9 +55,10 @@
         grid-row: 1;
         grid-column: 1;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         gap: 1em;
         align-items: center;
+        justify-content: center;
     }
 
     .navbar {
@@ -74,6 +75,10 @@
     #social-div {
         grid-row: 1;
         grid-column: 3;
+    }
+
+    .social {
+        margin: 0.25em;
     }
 
     #date-section {
