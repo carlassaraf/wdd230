@@ -80,6 +80,12 @@ h1, h2, h3, h4 {
     border: 1px black solid;
 }
 
+#spotlight-section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
 @media screen and (max-width: 30em) {
 
     #home-main {
