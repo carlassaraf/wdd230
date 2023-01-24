@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* Custom properties */
+:root {
+    --main-bk-color: #003459;
+    --secondary-bk-color: #fff4f4;
+    --main-font-color: white;
+    --navbar-bk-color: black;
+    --navlink-hover-color: #555555;
+    --link-alter-active-color: #cccccc;
+    --secondary-font-color: rgba(255, 255, 0, 0.734);
+    --active-link-font-color: rgb(255, 255, 163);
+    --title-font-family: 'Ubuntu';
+    --main-font-family: 'Roboto Mono';
+    --table-row-odd-bk-color: white;
+    --table-row-even-bk-color: rgb(239, 232, 232);
+}
