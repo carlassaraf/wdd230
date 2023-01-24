@@ -76,7 +76,6 @@ h1, h2, h3, h4 {
 
 .home-section, .spotlight {
     background-color: var(--secondary-bk-color);
-    margin: 1em;
     padding: 1em;
     border: 1px black solid;
 }
@@ -90,5 +89,10 @@ h1, h2, h3, h4 {
     #home-main {
         display: flex;
         flex-flow: column nowrap;
+        gap: 1em;
+    }
+    
+    #join-section {
+        display: none;
     }
 }
