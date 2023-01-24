@@ -77,10 +77,6 @@
         grid-column: 3;
     }
 
-    .social {
-        margin: 0.25em;
-    }
-
     #date-section {
         grid-column: 1/4;
         grid-row: 2;

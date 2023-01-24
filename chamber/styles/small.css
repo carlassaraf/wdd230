@@ -76,7 +76,7 @@ header {
     color: var(--main-font-color);
     font-family: var(--title-font-family), sans-serif;
     text-decoration: none;
-    padding: 0.4em 1em;
+    padding: 0 1em;
 }
 
 .nav-item a:hover {
@@ -106,7 +106,7 @@ header {
     max-width: 40px;
     width: 100%;
     height: auto;
-    margin: 0.5em;
+    margin: 0;
 }
 
 #date-section {
@@ -147,5 +147,50 @@ header {
 
     #spotlight-section .spotlight:nth-child(3) {
         display: none;
+    }
+
+    #header-content {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 1em;
+    }
+
+    #logo-section {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #social-div {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .navbar {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #date-section {
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-end;
+    }
+
+    .nav-links .nav-item:first-child {
+        display: block;
+    }
+
+    #menu::before {
+        content: "≣";
     }
 }
