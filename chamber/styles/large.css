@@ -67,6 +67,10 @@
         padding: 0.75em 0;
     }
 
+    .nav-links .nav-item:first-child {
+        display: none;
+    }
+
     #social-div {
         grid-row: 1;
         grid-column: 3;

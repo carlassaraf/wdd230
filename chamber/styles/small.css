@@ -88,11 +88,11 @@ header {
     font-weight: bolder;
 }
 
-.show {
+.responsive-menu li {
     display: block;
 }
 
-.responsive #menu::before {
+.responsive-menu #menu::before {
     content: "X";
 }
 
@@ -103,7 +103,7 @@ header {
 }
 
 .social {
-    max-width: 32px;
+    max-width: 40px;
     width: 100%;
     height: auto;
     margin: 0.5em;

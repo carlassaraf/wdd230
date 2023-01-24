@@ -79,6 +79,12 @@
         display: none;
     }
 
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-end;
+    }
+
     .nav-links .nav-item:first-child {
         display: block;
     }
