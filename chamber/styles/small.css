@@ -26,6 +26,10 @@ header, main, footer {
     margin-top: 1em;
 }
 
+main {
+    margin: 1em;
+}
+
 header, footer {
     background-color: var(--main-bk-color);
     color: var(--main-font-color);
