@@ -139,6 +139,5 @@
 
     #info p:first-child::after, #info p:nth-child(2)::after, #info p:nth-child(3)::after {
         content: " |";
-        width: fit-content;
     }
 }

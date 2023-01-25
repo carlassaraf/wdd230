@@ -98,4 +98,25 @@
         grid-column: 1/4;
         grid-row: 2;
     }
+
+    #footer-bottom-content p {
+        margin: 0;
+    }
+
+    #footer-bottom-content {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 0.5em;
+        justify-content: center;
+    }
+
+    #info {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0.5em;
+    }
+
+    #info p:first-child::after, #info p:nth-child(2)::after, #info p:nth-child(3)::after {
+        content: " |";
+    }
 }
