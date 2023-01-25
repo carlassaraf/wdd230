@@ -307,7 +307,7 @@ hr {
         margin: 0;
     }
 
-    #footer-bottom-content {
+    #footer-bottom-content, #info {
         display: flex;
         flex-flow: column nowrap;
         gap: 0;

@@ -119,4 +119,26 @@
     #footer-top-content h4, #footer-top-content p {
         text-align: center;
     }
+
+    #footer-bottom-content p {
+        margin: 0;
+    }
+
+    #footer-bottom-content {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 0.5em;
+        align-items: center;
+    }
+
+    #info {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0.5em;
+    }
+
+    #info p:first-child::after, #info p:nth-child(2)::after, #info p:nth-child(3)::after {
+        content: " |";
+        width: fit-content;
+    }
 }

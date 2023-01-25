@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Date object
     const dateObj = new Date();
     // Last modified paragraph
-    const lastModified = document.querySelector("#footer-bottom-content p:nth-child(4)");
+    const lastModified = document.querySelector("#lastModified");
     // Full year paragraph
     const fullYear = document.querySelector("#footer-bottom-content p:first-child");
 
