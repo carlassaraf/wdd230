@@ -290,7 +290,7 @@ hr {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        gap: 0.5em;
+        gap: 0.75em;
     }
 
     #footer-top-content p {
@@ -301,5 +301,16 @@ hr {
     #footer-logo {
         max-width: 80px;
         height: auto;
+    }
+
+    #footer-bottom-content p {
+        margin: 0;
+    }
+
+    #footer-bottom-content {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
+        align-items: center;
     }
 }
