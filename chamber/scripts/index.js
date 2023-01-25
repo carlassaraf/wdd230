@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const dateObj = new Date();
     // Last modified paragraph
     const lastModified = document.querySelector("#footer-bottom-content p:nth-child(4)");
+    // Full year paragraph
+    const fullYear = document.querySelector("#footer-bottom-content p:first-child");
 
     // Add event for menu click
     menu.addEventListener("click", () => navLinks.classList.toggle("responsive-menu"));
@@ -46,4 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add last modified
     lastModified.innerText = `Last modified: ${document.lastModified}`;
+
+    // Add full year after © symbol
+    const index = fullYear.innerText.indexOf("©");
+    const str = fullYear.innerText.slice(0, index + 1).concat(dateObj.getFullYear());
+    fullYear.innerText = str.concat(fullYear.innerText.slice(index + 1));
 });
