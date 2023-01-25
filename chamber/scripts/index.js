@@ -35,10 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const date = document.querySelector("#date-section p");
     // Date object
     const dateObj = new Date();
+    // Last modified paragraph
+    const lastModified = document.querySelector("#footer-bottom-content p:nth-child(4)");
 
     // Add event for menu click
     menu.addEventListener("click", () => navLinks.classList.toggle("responsive-menu"));
 
     // Add current date
     date.innerText = `${dateObj.getDayString()}, ${dateObj.getDate()} ${dateObj.getMonthString()} ${dateObj.getFullYear()}`;
+
+    // Add last modified
+    lastModified.innerText = `Last modified: ${document.lastModified}`;
 });
