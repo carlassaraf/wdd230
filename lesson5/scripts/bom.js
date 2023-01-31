@@ -38,5 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         list.append(li);
         // Clear input
         input.value = "";
+        // Set focus
+        input.focus();
     });
 });
