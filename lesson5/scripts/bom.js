@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
         let btn = document.createElement("button");
         btn.classList.add("delete");
         btn.innerText = "X";
+        // Add delete event for button
+        btn.addEventListener("click", (e) => {
+            // Go from target to parent and delete
+            e.target.parentElement.remove();
+        });
         // Append elements into div
         div.append(...[h4, btn]);
         // Append div
