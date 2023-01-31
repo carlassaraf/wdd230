@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Find button
     const button = document.querySelector("button");
     // Find the main div element
-    const container = document.querySelector("#chapters-container");
+    const list = document.querySelector("ul");
     // Add click event
     button.addEventListener("click", () => {
         // Validate input content
         if(input.value.trim() === "") { return; }
         // Create a div with the class chapter-container class
-        let div = document.createElement("div");
-        div.classList.add("chapter-container");
+        let li = document.createElement("div");
+        li.classList.add("chapter-container");
         // Create the h4 with the content
         let h4 = document.createElement("h4");
         h4.innerText = input.value.capitalize();
@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // Go from target to parent and delete
             e.target.parentElement.remove();
         });
-        // Append elements into div
-        div.append(...[h4, btn]);
-        // Append div
-        container.append(div);
+        // Append elements into li
+        li.append(...[h4, btn]);
+        // Append li
+        list.append(li);
         // Clear input
         input.value = "";
     });
