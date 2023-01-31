@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* Custom properties */
+:root {
+    --main-bk-color: #003459;
+    --secondary-bk-color: #fff4f4;
+    --main-font-color: white;
+    --secondary-font-color: rgba(255, 255, 0, 0.734);
+    --title-font-family: 'Ubuntu';
+    --main-font-family: 'Roboto Mono';
+}
+
+body {
+    font-family: var(--main-font-family), monospace, sans-serif;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 40%;
+}
+
+header, footer {
+    background-color: var(--main-bk-color);
+    color: var(--main-font-color);
+    border-radius: 1.75em;
+}
+
+header {
+    padding: 0.5em 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--title-font-family), sans-serif;
+    text-align: center;
+    margin: 0;
+}
