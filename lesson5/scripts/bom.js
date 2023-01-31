@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Validate input content
         if(input.value.trim() === "") { return; }
         // Create a div with the class chapter-container class
-        let li = document.createElement("div");
+        let li = document.createElement("li");
         li.classList.add("chapter-container");
         // Create the h4 with the content
         let h4 = document.createElement("h4");
