@@ -27,7 +27,7 @@ header, footer {
     border-radius: 1.75em;
 }
 
-header {
+header, footer {
     padding: 0.5em 0;
 }
 
@@ -69,4 +69,8 @@ h1, h2, h3, h4 {
     padding: 0.5em;
     color: white;
     background-color: black;
+}
+
+footer h4 {
+    color: var(--secondary-font-color);
 }
