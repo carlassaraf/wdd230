@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Find the input
     const input = document.querySelector("input");
     // Find button
-    const button = document.querySelector("buton");
-    // Find the main element
-    const main = document.querySelector("main");
+    const button = document.querySelector("button");
+    // Find the main div element
+    const container = document.querySelector("#chapters-container");
     // Add click event
     button.addEventListener("click", () => {
         // Validate input content
@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Append elements into div
         div.append(...[h4, btn]);
         // Append div
-        main.append(div);
+        container.append(div);
+        // Clear input
+        input.value = "";
     });
 });
