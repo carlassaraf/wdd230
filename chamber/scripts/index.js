@@ -53,4 +53,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const index = fullYear.innerText.indexOf("©");
     const str = fullYear.innerText.slice(0, index + 1).concat(dateObj.getFullYear());
     fullYear.innerText = str.concat(fullYear.innerText.slice(index + 1));
+
+    // Check whether it's Monday or Tuesday to show banner
+    const day = dateObj.getDay();
+    if(day > 0 && day < 3) { 
+        // Create container for banner
+        let banner = document.createElement("section");
+        banner.classList.add("banner");
+        // Create h4 for the content
+        let bannerContent = document.createElement("h4");
+        bannerContent.innerText = "🤝 Come join us for the chamber meet and greet Wednesday at 7:00 pm 🤝";
+        // Append elements
+        banner.append(bannerContent);
+        document.querySelector("header").prepend(banner);
+    }
 });
