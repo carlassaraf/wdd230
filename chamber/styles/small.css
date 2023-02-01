@@ -144,6 +144,20 @@ hr {
     gap: 1em;
 }
 
+#event-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+}
+
+#event-section p span {
+    color: var(--main-bk-color);
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+}
+
 /* Footer elements */
 
 #footer-top-content {
