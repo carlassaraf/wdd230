@@ -78,7 +78,16 @@
         grid-row: 1;
         grid-column: 2;
         width: 100%;
-        padding: 0.75em 0;
+        height: 40px;
+    }
+
+    .nav-links {
+        height: 100%;
+        align-items: center;
+    }
+
+    .nav-item a {
+        padding: 0.75em;
     }
 
     .nav-links .nav-item:first-child {
