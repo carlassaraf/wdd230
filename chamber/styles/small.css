@@ -123,6 +123,7 @@ hr {
 #date-section {
     background-color: var(--navbar-bk-color);
     width: 100%;
+    border-radius: 1.5em;
 }
 
 #date-section p {
