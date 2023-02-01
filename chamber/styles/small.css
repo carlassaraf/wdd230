@@ -50,6 +50,15 @@ hr {
 
 /* Header elements */
 
+.banner {
+    background-color: var(--navbar-bk-color);
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 1px white solid;
+}
+
 #name-section h2 {
     overflow-wrap: break-word;
 }
