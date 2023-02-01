@@ -151,7 +151,16 @@ hr {
     align-items: center;
 }
 
+#event-section {
+    justify-content: space-between;
+}
+
+#news-section {
+    justify-content: flex-start;
+}
+
 #event-section p span {
+    margin: 0;
     color: var(--main-bk-color);
     font-weight: bolder;
     display: block;
