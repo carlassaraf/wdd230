@@ -142,6 +142,8 @@ hr {
 #spotlight-section {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
 }
 
@@ -222,7 +224,8 @@ hr {
 
 #hero-section img {
     width: 100%;
-    height: 100%;
+    max-width: 1200px;
+    height: auto;
 }
 
 #hero-section button {
