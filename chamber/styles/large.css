@@ -41,52 +41,6 @@
         display: block;
     }
 
-    #temperature-div {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        gap: 1em;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    #weather-section :nth-child(2) img {
-        max-width: 64px;
-        height: auto;
-    }
-
-    #temperature {
-        height: fit-content;
-        justify-content: flex-end;
-    }
-
-    #weather-section hr {
-        margin: 0.25em;
-    }
-
-    #weather-status {
-        width: 100%;
-        display: flex;
-        padding-right: 1em;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    #weather-data {
-        display: flex;
-        gap: 0.5em;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    #wind-speed, #wind-chill {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-
     #header-content {
         display: grid;
         grid-template-columns: auto 1fr auto;

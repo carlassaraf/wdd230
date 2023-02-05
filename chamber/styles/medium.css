@@ -3,7 +3,7 @@
     #home-main {
         display: grid;
         grid-template-columns: 1fr auto;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(5, auto);
         grid-gap: 1em;
     }
 
