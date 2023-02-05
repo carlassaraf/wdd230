@@ -28,6 +28,14 @@
         grid-row: 4;
     }
 
+    #join-section button {
+        width: 100%;
+    }
+
+    #join-section p {
+        text-align: center;
+    }
+
     #event-section {
         grid-column: 1;
         grid-row: 5;
