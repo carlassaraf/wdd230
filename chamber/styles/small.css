@@ -235,6 +235,12 @@ hr {
     gap: 1em;
 }
 
+#spotlight-container {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
 .spotlight {
     gap: 0.25em;
 }
