@@ -13,6 +13,13 @@ function toFahrenheit(temperature) { return temperature * 9 / 5 + 32; }
 function toCelsius(temperature) { return (temperature - 32) * 5 / 9; }
 
 /**
+ * Converts kilometers to miles
+ * @param {Number} km 
+ * @returns Distance in miles
+ */
+function toMiles(km) { return km / 1.609; }
+
+/**
  * Calculates, if possible, the wind chill
  * @param {Number} temperature Temperature in Fahrenheit
  * @param {Number} windSpeed Wind speed in mph 
@@ -31,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Get temperature value
     const temperature = toFahrenheit(parseFloat(document.querySelector("#temperature").innerText));
     // Get wind speed value
-    const windSpeed = parseFloat(document.querySelector("#wind-speed span").innerText);
+    const windSpeed = toMiles(parseFloat(document.querySelector("#wind-speed span").innerText));
     // Calculate wind chill value
     const windChill = getWindChill(temperature, windSpeed);
     // Set value
