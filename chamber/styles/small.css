@@ -375,6 +375,26 @@ hr {
     margin: 0;
 }
 
+#discovery-pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+    margin-top: 1em;
+    background-color: var(--secondary-bk-color);
+    padding: 1em;
+}
+
+.discovery-pic {
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
 @media screen and (max-width: 35em) {
 
     #home-main {
