@@ -354,6 +354,27 @@ hr {
     grid-row: 3;
 }
 
+/* Discovery page */
+
+#discovery-info {
+    background-color: var(--secondary-bk-color);
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#discovery-info h2 {
+    background-color: var(--main-bk-color);
+    color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+#discovery-info p {
+    margin: 0;
+}
+
 @media screen and (max-width: 35em) {
 
     #home-main {
