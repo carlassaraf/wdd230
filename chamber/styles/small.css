@@ -395,6 +395,12 @@ hr {
     border-radius: 0.5em;
 }
 
+picture { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 35em) {
 
     #home-main {
