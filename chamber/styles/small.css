@@ -401,6 +401,10 @@ picture {
     align-items: center;
 }
 
+.discovery-pic picture img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
 @media screen and (max-width: 35em) {
 
     #home-main {
@@ -550,5 +554,9 @@ picture {
         flex-flow: column nowrap;
         gap: 0;
         align-items: center;
+    }
+
+    .discovery-pic picture img:hover {
+        box-shadow: 0 0 0 0;
     }
 }
