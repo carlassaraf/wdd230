@@ -376,10 +376,6 @@ hr {
 }
 
 #discovery-pics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1em;
     margin-top: 1em;
     background-color: var(--secondary-bk-color);
     padding: 1em;
@@ -399,6 +395,10 @@ picture {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.discovery-pic picture img {
+    width: 100%;
 }
 
 .discovery-pic picture img:hover {
@@ -556,7 +556,15 @@ picture {
         align-items: center;
     }
 
+    /* Discovery page */
+
     .discovery-pic picture img:hover {
         box-shadow: 0 0 0 0;
+    }
+
+    #discovery-pics {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
     }
 }

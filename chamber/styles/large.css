@@ -127,4 +127,12 @@
     #info p:first-child::after, #info p:nth-child(2)::after, #info p:nth-child(3)::after {
         content: " |";
     }
+
+    /* Discovery page */
+    #discovery-pics {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1em;
+    }
 }

@@ -155,4 +155,15 @@
     #info p:first-child::after, #info p:nth-child(2)::after, #info p:nth-child(3)::after {
         content: " |";
     }
+
+    /* Discovery page */
+    #discovery-pics {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1em;
+        margin-top: 1em;
+        background-color: var(--secondary-bk-color);
+        padding: 1em;
+    }
 }
