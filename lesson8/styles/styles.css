@@ -9,6 +9,11 @@
     --secondary-font-color: rgba(255, 255, 0, 0.734);
     --title-font-family: 'Ubuntu';
     --main-font-family: 'Roboto Mono';
+    /* Table properties */
+    --main-th-bk: black;
+    --secondary-th-bk: #555555;
+    --border: #555555;
+    --zebra: #eeeeee;
 }
 
 body {
@@ -38,6 +43,7 @@ main {
     align-items: center;
     gap: 1em;
     background-color: var(--secondary-bk-color);
+    padding: 1em;
 }
 
 h1, h2, h3, h4 {
@@ -50,7 +56,39 @@ footer h4 {
     color: var(--secondary-font-color);
 }
 
+table {
+    border: thin solid var(--border);
+    border-collapse: collapse;
+}
+
 caption {
     caption-side: bottom;
     font-size: 0.8em;
+}
+
+td {
+    padding: 0.5em 2em;
+    text-align: center;
+}
+
+th {
+    color: white;
+    text-align: center;
+    padding: 0.75em 2em;
+}
+
+thead :first-child {
+    background-color: var(--main-th-bk);
+}
+
+thead :nth-child(2) {
+    background-color: var(--secondary-th-bk);
+}
+
+tbody * {
+    border: thin solid var(--border);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
 }
