@@ -166,4 +166,11 @@
         background-color: var(--secondary-bk-color);
         padding: 1em;
     }
+
+    /* Join us page */
+    #join-main form div {
+        width: 100%;
+        max-width: 600px;
+    }
+
 }
