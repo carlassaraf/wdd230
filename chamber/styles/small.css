@@ -449,6 +449,24 @@ picture {
     flex-direction: row;
     gap: 0;
     align-items: center;
+    justify-content: center;
+}
+
+#description-div {
+    flex-direction: column !important;
+}
+
+#description-div label {
+    border-radius: 1em 1em 0 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#description {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    padding: 1em;
 }
 
 @media screen and (max-width: 35em) {
