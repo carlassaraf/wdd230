@@ -34,6 +34,7 @@ function displayProphets(prophets) {
         let pdeath = document.createElement('p');
         let pyears = document.createElement('p');
         let pchildren = document.createElement('p');
+        let page = document.createElement('p');
         
         // Add card styles
         card.setAttribute("class", "card");
@@ -64,8 +65,13 @@ function displayProphets(prophets) {
         pchildren.innerText = `Number of children: ${prophet.numofchildren}`;
         pchildren.setAttribute("class", "card-text");
 
+        // Build the p content to show age
+        page.innerText = `Age: ${getAge(prophet.birthdate, prophet.death)}`;
+        page.setAttribute("class", "card-text");
+
         // Append the card body with the created elements
         cardbody.appendChild(h2);
+        cardbody.appendChild(page);
         cardbody.appendChild(pbirth);
         cardbody.appendChild(pdeath);
         cardbody.appendChild(pyears);
@@ -80,12 +86,42 @@ function displayProphets(prophets) {
     });
 }
 
+/**
+ * Converts the Prophet index in the array to an ordinal number
+ * @param {Number} number Prophet index in array 
+ * @returns String
+ */
 function toOrdinalString(number) {
     // Check if it's 1st, 2nd or 3rd
     if(number == 1) { return "1st"; }
     else if(number == 2) { return "2nd"; }
     else if(number == 3) { return "3rd"; }
     else { return `${number}th`; }
+}
+
+/**
+ * Returns age at death
+ * @param {String} birth String date of birth 
+ * @param {String} death String date of death
+ * @returns Number
+ */
+function getAge(birth, death) {
+    // Check if death is null
+    if(death === null) { death = Date.now(); }
+    // Create date objects
+    const birthdate = new Date(birth);
+    const deathdate = new Date(death);
+    // Get year difference
+    let age = deathdate.getFullYear() - birthdate.getFullYear();
+    // If month of death is lesser that month of birth, substract one year
+    if(deathdate.getMonth() < birthdate.getMonth()) { age -= 1; }
+    // Check if it's the same month
+    else if(deathdate.getMonth() == birthdate.getMonth()) {
+        // Check the date
+        if(deathdate.getDate() < birthdate.getDate()) { age -= 1; }
+    }
+    // Return age at death
+    return age;
 }
 
 // Call function
