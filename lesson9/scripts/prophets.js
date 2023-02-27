@@ -43,8 +43,6 @@ function displayProphets(prophets) {
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
 
         // Build and append the p content to show date and place of birth
         pbirth.innerText = `Born on ${prophet.birthdate} in ${prophet.birthplace}`;
