@@ -55,3 +55,46 @@ h1, h2, h3, h4 {
 footer h4 {
     color: var(--secondary-font-color);
 }
+
+/* Card styles */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: flex-start;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    max-width: 340px;
+}
+
+.card img {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+    border-radius: 1em 1em 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+.card-title {
+    text-align: left;
+}
+
+.card-text {
+    padding: 0;
+    margin: 0;
+}

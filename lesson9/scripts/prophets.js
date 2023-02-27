@@ -35,6 +35,10 @@ function displayProphets(prophets) {
         let pyears = document.createElement('p');
         let pchildren = document.createElement('p');
         
+        // Add card styles
+        card.setAttribute("class", "card");
+        cardbody.setAttribute("class", "card-body");
+
         // Build the h2 content out to show the prophet's full name - finish the template string
         h2.textContent = `${prophet.name} ${prophet.lastname}`;
         h2.setAttribute("class", "card-title");
