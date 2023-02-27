@@ -24,7 +24,7 @@ function displayProphets(prophets) {
     // select the output container element
     const cards = document.querySelector('div.cards'); 
     // loop through every prophet
-    prophets.forEach((prophet) => {
+    prophets.forEach((prophet, number) => {
         // create elements to add to the div.cards element
         let card = document.createElement('section');
         let cardbody = document.createElement('div');
@@ -40,12 +40,12 @@ function displayProphets(prophets) {
         cardbody.setAttribute("class", "card-body");
 
         // Build the h2 content out to show the prophet's full name - finish the template string
-        h2.textContent = `${prophet.name} ${prophet.lastname}`;
+        h2.textContent = `${prophet.name} ${prophet.lastname} - ${toOrdinalString(number + 1)} Latter-day President`;
         h2.setAttribute("class", "card-title");
     
         // Build the image portrait by setting all the relevant attribute
         portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
+        portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${toOrdinalString(number + 1)} Latter-day President`);
         portrait.setAttribute('loading', 'lazy');
 
         // Build and append the p content to show date and place of birth
@@ -78,6 +78,14 @@ function displayProphets(prophets) {
     
         cards.appendChild(card);
     });
+}
+
+function toOrdinalString(number) {
+    // Check if it's 1st, 2nd or 3rd
+    if(number == 1) { return "1st"; }
+    else if(number == 2) { return "2nd"; }
+    else if(number == 3) { return "3rd"; }
+    else { return `${number}th`; }
 }
 
 // Call function
