@@ -53,7 +53,7 @@ function displayProphets(prophets) {
         pbirth.setAttribute("class", "card-text");
 
         // Build the p content to show date of death
-        pdeath.innerText = `Date of death: ${prophet.death}`;
+        pdeath.innerText = `Date of death: ${(prophet.death === null)? "N/A" : prophet.death}`;
         pdeath.setAttribute("class", "card-text");
 
         // Build and append the p content to show years as prophet
