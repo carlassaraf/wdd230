@@ -1,6 +1,37 @@
 // JSON file url
 const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
 
+// Add event listeners to filters
+document.addEventListener("DOMContentLoaded", () => {
+    // select the output container element
+    const cards = document.querySelector('div.cards'); 
+    // No filter button
+    document.querySelector("#no-filter").addEventListener("click", () => {
+        // Clear cards
+        cards.innerHTML = "";
+        // Get prophets data and display
+        getProphetData().then(prophets => displayProphets(prophets));
+    });
+
+    // Served more than a decade filter
+    document.querySelector("#decade-filter").addEventListener("click", () => {
+        // Clear cards
+        cards.innerHTML = "";
+        // Get prophets data
+        getProphetData().then(prophets => {
+            // filter by years of service
+            const filter = prophets.filter((prophet) => {
+                // Only more than ten years
+                return prophet.length >= 10;
+            });
+            // Display prophets
+            displayProphets(filter);
+        })
+    });
+    // Get prophets data and display
+    getProphetData().then(prophets => displayProphets(prophets));
+});
+
 /**
  * Gets the Prophets data from a JSON request
  */
@@ -10,9 +41,9 @@ async function getProphetData() {
     // Get JSON data from response
     const data = await response.json();
     // Output the Array data from the JSON
-    //console.table(data.prophets);  
-    // Create HTML card for every prophet
-    displayProphets(data.prophets);
+    //console.table(data.prophets); 
+    // Return prophets data
+    return data.prophets;
 }
 
 /**
@@ -123,6 +154,3 @@ function getAge(birth, death) {
     // Return age at death
     return age;
 }
-
-// Call function
-getProphetData();

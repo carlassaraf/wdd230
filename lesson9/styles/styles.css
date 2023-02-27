@@ -9,11 +9,6 @@
     --secondary-font-color: rgba(255, 255, 0, 0.734);
     --title-font-family: 'Ubuntu';
     --main-font-family: 'Roboto Mono';
-    /* Table properties */
-    --main-th-bk: black;
-    --secondary-th-bk: #555555;
-    --border: #555555;
-    --zebra: #eeeeee;
 }
 
 body {
@@ -97,4 +92,21 @@ footer h4 {
 .card-text {
     padding: 0;
     margin: 0;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.filter {
+    font-size: 1.25em;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.filter:hover {
+    background-color: #fff4f4;
 }
