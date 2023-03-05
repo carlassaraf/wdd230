@@ -497,6 +497,44 @@ button[type=submit]:hover {
     text-align: center;
 }
 
+/* Directory styles */
+
+#directory-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    background-color: var(--secondary-bk-color);
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.card img {
+    height: 100px;
+    max-width: 125px;
+    width: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    align-items: center;
+}
+
+.card-text {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+
 @media screen and (max-width: 35em) {
 
     #home-main {
