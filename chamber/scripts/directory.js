@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     // Get the main container
-    const main = document.querySelector("#directory-main");
+    const main = document.querySelector("#directory");
     // Fetch json
     fetch("./json/directory.json").then(response => response.json()).then(data => {
         // Create a new card for every element in the directory
