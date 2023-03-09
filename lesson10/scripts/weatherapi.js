@@ -5,10 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const captionDesc = document.querySelector('figcaption');
     // API url
     const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=51c9e7e908aa3baccb967c02e9950992";
-    // Fetch API
+    // Fetch API and display
     apiFetch(url).then(data => displayResults(currentTemp, weatherIcon, captionDesc, data));
 });
 
+/**
+ * Fetches the data from given url
+ * @param {String} url API request url
+ * @returns JSON data object
+ */
 async function apiFetch(url) {
     // JSON data
     let data;
@@ -32,6 +37,13 @@ async function apiFetch(url) {
     return data;
 }
 
+/**
+ * Properly displays the weather info
+ * @param {HTMLElement} currentTemp HTML element to insert temperature
+ * @param {HTMLElement} weatherIcon HTML img
+ * @param {HTMLElement} captionDesc HTML figcaption
+ * @param {Object} weatherData JSON data object
+ */
 function displayResults(currentTemp, weatherIcon, captionDesc, weatherData) {
     // Get the temperature in Fahrenheit without decimals
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
@@ -45,6 +57,10 @@ function displayResults(currentTemp, weatherIcon, captionDesc, weatherData) {
     captionDesc.textContent = desc;
 }
 
+/**
+ * Returns the same capitalized string
+ * @returns Capitalized String
+ */
 String.prototype.capitalize = function() {
     // split the string by spaces
     let arr = this.split(" ");
