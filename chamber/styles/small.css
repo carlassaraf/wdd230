@@ -188,6 +188,11 @@ hr {
     background-color: var(--button-hover-bk-color);
 }
 
+#join-section button a {
+    text-decoration: none;
+    color: white;
+}
+
 #temperature-div {
     display: flex;
     width: 100%;
@@ -293,6 +298,11 @@ hr {
     padding: 0.75em 4em;
     font-size: 1.25em;
     font-weight: bolder;
+}
+
+#hero-section button a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Footer elements */
