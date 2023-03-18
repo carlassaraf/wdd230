@@ -482,6 +482,26 @@ button[type=submit]:hover {
     box-shadow: 0 0 10px #333;
 }
 
+#memberships-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.membership-info {
+    border: 1px var(--main-bk-color) solid;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.membership-info h4 {
+    margin-top: 1em;
+}
+
 /* Thank you page */
 
 #thank-you-main {

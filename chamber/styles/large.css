@@ -167,4 +167,13 @@
         gap: 0.25em;
         align-items: center;
     }
-}
+
+    /* Join page */
+
+    #join-main-content {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: space-evenly;
+    }
+} 
