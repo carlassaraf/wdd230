@@ -99,21 +99,3 @@ function displayResults(weatherData) {
     captionDesc.textContent = desc;
     windspeed.innerText = `${weatherData.wind.speed} km/h`;
 }
-
-/**
- * Returns the same capitalized string
- * @returns Capitalized String
- */
-String.prototype.capitalize = function() {
-    // split the string by spaces
-    let arr = this.split(" ");
-    // capitalized array
-    let capArr = [];
-    // loop through every word
-    arr.forEach(word => {
-        // capitalize word
-        capArr.push(`${word.slice(0, 1).toUpperCase()}${word.slice(1)}`);
-    });
-    // join array and return
-    return capArr.join(" ");
-}
