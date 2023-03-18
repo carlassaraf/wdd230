@@ -222,4 +222,20 @@
         align-items: center;
         justify-content: center;
     }
+
+    /* Contact page */
+
+    #contact-main form {
+        padding: 1em;
+        max-width: 400px;
+    }
+
+    #contact-main form div {
+        max-width: 350px;
+    }
+
+    iframe {
+        width: 400px;
+        height: auto;
+    }
 }

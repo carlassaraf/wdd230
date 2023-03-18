@@ -546,6 +546,72 @@ button[type=submit]:hover {
     gap: 1em;
 }
 
+/* Contact page */
+
+#contact-main {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#contact-main form {
+    border: 1px solid black;
+    box-shadow: 0 0 50px #333;
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contact-main form div {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 400px;
+    gap: 0.5em;
+}
+
+#contact-left {
+    align-self: center;
+}
+
+#contact-main input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#contact-main textarea {
+    padding: 0.5em;
+}
+
+#contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-content: center;
+}
+
+#contact-right div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    align-self: center;
+}
+
+#contact-right div p {
+    padding: 0;
+    margin: 0;
+}
+
 @media screen and (max-width: 35em) {
 
     #home-main {
@@ -760,5 +826,21 @@ button[type=submit]:hover {
     .card-title {
         text-align: left;
         font-size: 0.8em;
+    }
+
+    /* Contact page */
+
+    #contact-main form {
+        padding: 1em;
+        max-width: 300px;
+    }
+
+    #contact-main form div {
+        max-width: 250px;
+    }
+
+    iframe {
+        width: 300px;
+        height: auto;
     }
 }
