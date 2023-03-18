@@ -502,6 +502,10 @@ button[type=submit]:hover {
     margin-top: 1em;
 }
 
+.membership-benefits li {
+    padding: 0 1em;
+}
+
 /* Thank you page */
 
 #thank-you-main {
