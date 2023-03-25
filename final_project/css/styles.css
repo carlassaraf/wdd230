@@ -73,5 +73,22 @@ button a {
     text-decoration: none;
     color: white;
     display: block;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em; 
+}
+
+#weather-section {
+    background-color: lemonchiffon;
+    padding: 1em;
+}
+
+#weather-section p {
+    margin: 0;
+}
+
+#weather-description {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
 }
