@@ -43,3 +43,31 @@ body {
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
 }
+
+/* Main section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+#call-to-action picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#call-to-action button {
+    font-family: 'Alkatra', cursive;
+    position: relative;
+    top: -5em;
+    left: 2em;
+    border: none;
+    padding: 0.25em 1em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    font-size: 1.25em;
+}
