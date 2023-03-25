@@ -60,14 +60,18 @@ main {
 }
 
 #call-to-action button {
-    font-family: 'Alkatra', cursive;
     position: relative;
     top: -5em;
     left: 2em;
     border: none;
-    padding: 0.25em 1em;
     background-color: black;
-    color: white;
     border-radius: 1em;
     font-size: 1.25em;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5em 1em;
 }
