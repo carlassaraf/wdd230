@@ -1,4 +1,45 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+:root {
+    --font-color: black;
+}
+
 body {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
+
+    font-family: 'Alkatra', cursive;
+}
+
+/* Navbar styles */
+
+#logo {
+    max-height: 100px;
+    max-height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    display: block;
+    color: var(--font-color);
+    font-size: 1.25em;
+    padding: 0.25em 1em;
+}
+
+.nav-item a:hover {
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
 }
