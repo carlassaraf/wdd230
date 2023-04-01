@@ -49,10 +49,16 @@ body {
 /* Main section */
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1em;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+}
+
+#call-to-action {
+    grid-column: 1 / span 2;
+    grid-row: 1;
 }
 
 #call-to-action picture {
@@ -82,6 +88,8 @@ button a {
 #weather-section {
     background-color: lemonchiffon;
     padding: 1em;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 #weather-section p {
