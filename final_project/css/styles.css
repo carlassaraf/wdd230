@@ -6,10 +6,12 @@
 }
 
 body {
-    background-image: url("../images/background.png");
+    background-image: linear-gradient(to top, rgba(255, 255, 0, 0.5), rgba(255, 255, 255, 0.25)), url("../images/background.png");
     background-repeat: no-repeat;
+    background-size: 100% auto;
 
     font-family: 'Alkatra', cursive;
+    width: 100%;
 }
 
 /* Navbar styles */
@@ -73,7 +75,8 @@ button a {
     text-decoration: none;
     color: white;
     display: block;
-    padding: 0.5em 1em; 
+    padding: 0.25em 1em;
+    font-family: 'Alkatra', cursive;
 }
 
 #weather-section {
