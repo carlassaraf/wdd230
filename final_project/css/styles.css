@@ -179,6 +179,9 @@ form {
 
 .input-div * {
     width: 400px;
-    padding: 0;
     margin: 0;
+}
+
+input, textarea, select {
+    padding: 0.25em 0.5em;
 }
