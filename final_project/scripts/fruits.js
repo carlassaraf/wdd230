@@ -17,6 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }));
 
+    // Date object
+    const dateObj = new Date();
+    // Last modified paragraph
+    const lastModified = document.querySelector("#lastModified");
+    // Full year paragraph
+    const fullYear = document.querySelector("#footer-info p:first-child");
+
+    // Add last modified
+    lastModified.innerText = `Last modified: ${document.lastModified}`;
+
+    // Add full year after © symbol
+    const index = fullYear.innerText.indexOf("©");
+    const str = fullYear.innerText.slice(0, index + 1).concat(dateObj.getFullYear());
+    fullYear.innerText = str.concat(fullYear.innerText.slice(index + 1));
+
 
     document.querySelector("form").addEventListener("submit", (e) => {
         // Avoid form submission
