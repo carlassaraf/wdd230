@@ -185,3 +185,31 @@ form {
 input, textarea, select {
     padding: 0.25em 0.5em;
 }
+
+#about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+#about-main * {
+    margin: 0;
+}
+
+#about-main section {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-main section div {
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    height: 300px;
+}
